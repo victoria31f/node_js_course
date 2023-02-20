@@ -1,8 +1,11 @@
-const fs = require('fs');
-const csv = require('csvtojson');
+// const fs = require('fs');
+// const csv = require('csvtojson');
+
+import fs from 'fs';
+import csv from 'csvtojson';
 
 const path = './1_basics/nodejs-hw1-ex1.csv';
-const newFile = './fromCsv.txt';
+const newFile = './1_basics/fromCsv.txt';
 
 const reader = fs.createReadStream(path);
 const writer = fs.createWriteStream(newFile);
